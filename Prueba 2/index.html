@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Prueba 2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <!--usando el framework de bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <link href="css/estilos.css" rel="stylesheet">
+      </head>
+  <body>
+  <div class="d-flex flex-row bd-highlight mb-3 cuerpo">
+    <div class="p-2 bd-highlight ficha ">
+        <div class="persona">
+          <div class="borde">
+            <span class="material-icons md-48">person</span>
+          </div>
+          <div class="p-2 bd-highlight informacion" >
+            <h1>Nombre</h1>
+            <p>Fecha Fecha Fecha Fecha</p>
+            <button class="botoncuadrado btn" id="boton">Editar</button>
+          </div>
+        </div>
+
+      
+      <h1>Ultimo Signos Vitales</h1>
+      <div class="SVitales">
+        <div>
+          <ul>
+            <span class="iconovitales icono material-icons md-dark">arrow_back_ios</span><li>Estatura <p>valor</p> </li>
+            <span class="iconovitales icono material-icons md-dark">arrow_back_ios</span><li>Peso <p>valor</p></li>
+            <span class="iconovitales icono material-icons md-dark">arrow_back_ios</span><li>Frecuencia <br> Cardiaca <p>valor</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div id="formulario" class="p-2 bd-highlight informacionGeneral" style="display: none;">
+      <form  name="formulario" class="row g-3 needs-validation" novalidate>
+        <h1>Informacion</h1>
+        <!--primer campo-->
+        <ul id="campos" class="campos">
+          <li>
+            <div class="p-2 bd-highlight col">
+              <label for="nombrecompleto" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="nombrecompleto" value="" required>
+              <div class="valid-feedback">
+                Nombre Completo está correcto
+              </div>
+              <div class="invalid-feedback">
+                  
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="p-2 bd-highlight col">
+              <label for="edad" class="form-label">Edad</label>
+              <input type="number" class="form-control" id="edad" value="" required>
+              <div class="valid-feedback">
+                Edad
+              </div>
+              <div class="invalid-feedback">
+                Campo requerido
+              </div>
+            </div>
+
+          </li>
+          <li>
+            <div class="p-2 bd-highlight col">
+              <label for="genero" class="form-label">Genero</label>
+              <select class="form-select" id="genero" value="" required>
+                <option value="1">Sin definir</option>
+                <option value="2">Hombre</option>
+                <option value="3">Mujer</option>
+              </select>
+            </div>
+
+          </li>
+          <li>
+            <div class="p-2 bd-highlight col">
+              <label for="fecha" class="form-label">Fecha</label>
+              <input type="date" class="form-control" id="fecha" value="" required>
+              <div class="valid-feedback">
+                Fecha correcta
+              </div>
+              <div class="invalid-feedback">
+                  
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="p-2 bd-highlight col">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" placeholder="correo@mail.com" class="form-control" id="email" value="" required>
+              <div class="valid-feedback">
+                Correo Electrónico
+              </div>
+              <div class="invalid-feedback">
+                  Requerido y de tipo correo electrónico
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="p-2 bd-highlight col">
+              <label for="telefono" class="form-label">Telefono</label>
+              <input type="tel" placeholder="9 digitos" class="form-control" id="telefono" value="" required>
+              <div class="valid-feedback">
+                Telefono
+              </div>
+              <div class="invalid-feedback">
+                Campo requerido
+              </div>
+            </div>
+
+          </li> 
+          <li>
+            <div class="p-2 bd-highlight col">
+              <label for="rut" class="form-label">RUT</label>
+              <input type="text" placeholder="XXXXXXXX-X" class="form-control" id="rut" value="" required>
+              <div class="valid-feedback">
+                Rut esta correcto
+              </div>
+              <div class="invalid-feedback">
+                  
+              </div>
+            </div>
+          </li>
+        
+          <li>
+            <div class="p-2 bd-highlight col">
+              <label for="region" class="form-label">Región</label>
+              <select class="form-select" id="region" value="" required>
+                <option value="Valparaiso"></option>
+                <option value="Valparaiso">Valparaiso</option>
+                <option value="Rancagua">Rancagua</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="p-2 bd-highlight col">
+              <label for="comuna" class="form-label">Comuna</label>
+              <select class="form-select" id="comuna" value="" required>
+                <option value="Valparaiso">Valparaiso</option>
+                <option value="Quilpue">Quilpue</option>
+                <option value="Quillota">Quillota</option>
+                <option value="San Felipe">San Felipe</option>
+                <option value="San Antonio">San Antonio</option>
+                <option value="Rengo">Rengo</option>
+                <option value="Doñihue">Doñihue</option>
+                <option value="Machalí">Machalí</option>
+                <option value="Graneros">Graneros</option>
+                <option value="Coinco">Coinco</option>
+                
+              </select>
+            </div>
+          </li>
+          
+          
+          
+          <li>
+            <div class="row ">
+              <div class="col-2">
+                <button class="botoncuadrado btn " type="submit">Actualizar</button>
+              </div>
+            </div>
+          
+          </li>
+        </ul>
+      </form>
+      <div class="antecedentes">
+        <h1>Antecedentes clinicos <button id="masdatos" class="btn"><span class="material-icons md-dark">add_circle_outline</span></button></h1> 
+        <div>
+          <div>
+            <div><p>Fecha <br> informacion</p> </div>
+            <button class="btn bontoncito"><span class="icono material-icons md-dark">delete</span></button>
+          </div>
+          
+        </div>
+        <div>
+          <div>
+            <div><p>Fecha <br> informacion</p> </div>
+            <button class="btn bontoncito"><span class="icono material-icons md-dark">delete</span></button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div><p>Fecha <br> informacion</p> </div>
+            <button class="btn bontoncito"><span class="icono material-icons md-dark">delete</span></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="crearDatos" class="antecedentes" style="display: none;">
+        <h1>Datos Antecedentes Clinicos </h1> 
+        <ul class="datos"> 
+          <li>
+            <div class="p-2 bd-highlight col">
+              <label for="Motivo" class="form-label" ></label>
+              <input type="text" placeholder="Motivo hospitalizacion" class="form-control" id="Motivo" value="" required>
+              <div class="valid-feedback">
+                Motivo hospitalizacion
+              </div>
+              <div class="invalid-feedback"> 
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="p-2 bd-highlight col">
+              <label for="fecha" class="form-label"></label>
+              <input type="date" class="form-control" id="fecha" value="" required>
+              <div class="valid-feedback">
+                Fecha correcta
+              </div>
+              <div class="invalid-feedback">
+                  
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row ">
+              <div class="botoncuadrado col-2 ">
+                <button id="crear" class=" btn" type="submit">Crear</button>
+              </div>
+            </div>
+          
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+    
+  <script data-main="./js/inicio.js" src="./js/require-jquery.js"></script>
+  </body>
+</html>

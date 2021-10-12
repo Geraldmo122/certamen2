@@ -1,0 +1,81 @@
+.material-icons.md-48 {font-size: 400px; }
+.material-icons-md-10{font-size:40px ;}
+.cuerpo{
+    display: flex;
+}
+.persona{
+    display: flex;
+}
+.borde{
+    border: black;
+    border:solid;
+    border-width: 1px;
+    margin: 1%;
+}
+.informacion{
+    position: relative;
+    left: 1%;
+    margin: 1% 0 0 0;
+}
+.boton{
+    list-style: none;
+}
+.SVitales{
+    
+    margin: 1%;
+    border: solid;
+    border-width: 1px;
+    width: 400px;
+}
+
+.SVitales div ul li{
+    
+    list-style: none;
+    display: flex;
+    margin: 15%;
+}
+.SVitales div ul li p{
+    
+    position: absolute;
+    margin-left: 210px;
+}
+.informacionGeneral{
+    margin-left: 100px;
+    margin-top: 150px
+}
+.bontoncito{
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: -100px;
+}
+.antecedentes div div div {
+    list-style: none;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 1px;
+    margin:15px;
+}
+.antecedentes div div div P{
+    margin:40px;
+}
+
+.campos li{
+    list-style: none;
+}
+.datos{
+    border: solid;
+    border-width: 1px;
+}
+.datos li{
+    list-style: none;
+}
+.iconovitales{
+    position:relative;
+    top: 86px;
+}
+.botoncuadrado{
+    border: solid;
+    border-width: 1px;
+}
