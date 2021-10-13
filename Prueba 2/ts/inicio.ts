@@ -17,11 +17,26 @@ persona= {
     peso:"70 kg",
     frecuenciacardiaca:"70"
 }
+
+let casoClinico:{
+    fecha:string,
+    informacion:string,
+    
+}
+casoClinico= {
+    fecha:"20-10-2020",
+    informacion:"Hospitaliza por intoxicacion",
+    
+}
 $('#boton').on('click',function(event:any){
     if($('#formulario').attr(`style`)== `display: none;`){
         $('#formulario').show();
+        $('#antecendetess').hide();
     }else{ 
         $('#formulario').hide();
+        $('#antecendetess').show();
+        $('#masdatos').hide();
+        
     }
 });
 
@@ -72,6 +87,14 @@ function ValidarRut(valor:any){
     $("#estatura").append(`<p>${persona.estatura}</p>`)
     $("#peso").append(`<p>${persona.peso}</p>`)
     $("#frecuenciacardiaca").append(`<p>${persona.frecuenciacardiaca}</p>`)
+
+    $("#fecha").append(`<p>${casoClinico.fecha }</p> <p>${casoClinico.informacion }</p> `)
+    $("#fecha1").append(`<p>${casoClinico.fecha }</p> <p>${casoClinico.informacion }</p> `)
+    $("#fecha2").append(`<p>${casoClinico.fecha }</p> <p>${casoClinico.informacion }</p> `)
+
+    $("#fecha3").append(`<p>${casoClinico.fecha }</p> <p>${casoClinico.informacion }</p> `)
+    $("#fecha4").append(`<p>${casoClinico.fecha }</p> <p>${casoClinico.informacion }</p> `)
+    $("#fecha5").append(`<p>${casoClinico.fecha }</p> <p>${casoClinico.informacion }</p> `)
 
     let nombreCompleto:any=document.getElementById("nombrecompleto");
     let telefono:any=document.getElementById("telefono");
