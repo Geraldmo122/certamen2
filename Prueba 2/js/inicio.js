@@ -24,7 +24,6 @@ define(["require", "exports", "jquery"], function (require, exports, jquery) {
         else {
             $('#formulario').hide();
             $('#antecendetess').show();
-            $('#masdatos').hide();
         }
     });
     $('#masdatos').on('click', function (event) {

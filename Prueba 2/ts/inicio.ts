@@ -35,7 +35,7 @@ $('#boton').on('click',function(event:any){
     }else{ 
         $('#formulario').hide();
         $('#antecendetess').show();
-        $('#masdatos').hide();
+      
         
     }
 });
