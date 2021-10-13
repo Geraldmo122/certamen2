@@ -1,8 +1,22 @@
 import jquery=require('jquery');
 const $:JQueryStatic=jquery;
 
-
-
+let persona:{
+    nombre:string,
+    mesanio:string,
+    edad:string,
+    estatura:string,
+    peso:string,
+    frecuenciacardiaca:string
+}
+persona= {
+    nombre:"Pepito Perez",
+    mesanio:"Septiembre 21,1979",
+    edad:"43 años",
+    estatura:"1.75",
+    peso:"70 kg",
+    frecuenciacardiaca:"70"
+}
 $('#boton').on('click',function(event:any){
     if($('#formulario').attr(`style`)== `display: none;`){
         $('#formulario').show();
@@ -49,6 +63,15 @@ function ValidarRut(valor:any){
    return S?S-1:'k';
 }
 (function () {
+
+    
+    $("#personaa").append(`<h1>${persona.nombre}</h1>`)
+    $("#personaa").append(`<p>${persona.mesanio}</p>`)
+    $("#personaa").append(`<p>${persona.edad}</p>`)
+
+    $("#estatura").append(`<p>${persona.estatura}</p>`)
+    $("#peso").append(`<p>${persona.peso}</p>`)
+    $("#frecuenciacardiaca").append(`<p>${persona.frecuenciacardiaca}</p>`)
 
     let nombreCompleto:any=document.getElementById("nombrecompleto");
     let telefono:any=document.getElementById("telefono");

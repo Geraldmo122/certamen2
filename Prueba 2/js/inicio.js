@@ -2,6 +2,15 @@ define(["require", "exports", "jquery"], function (require, exports, jquery) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     var $ = jquery;
+    var persona;
+    persona = {
+        nombre: "Pepito Perez",
+        mesanio: "Septiembre 21,1979",
+        edad: "43 años",
+        estatura: "1.75",
+        peso: "70 kg",
+        frecuenciacardiaca: "70"
+    };
     $('#boton').on('click', function (event) {
         if ($('#formulario').attr("style") == "display: none;") {
             $('#formulario').show();
@@ -48,6 +57,12 @@ define(["require", "exports", "jquery"], function (require, exports, jquery) {
         return S ? S - 1 : 'k';
     }
     (function () {
+        $("#personaa").append("<h1>" + persona.nombre + "</h1>");
+        $("#personaa").append("<p>" + persona.mesanio + "</p>");
+        $("#personaa").append("<p>" + persona.edad + "</p>");
+        $("#estatura").append("<p>" + persona.estatura + "</p>");
+        $("#peso").append("<p>" + persona.peso + "</p>");
+        $("#frecuenciacardiaca").append("<p>" + persona.frecuenciacardiaca + "</p>");
         var nombreCompleto = document.getElementById("nombrecompleto");
         var telefono = document.getElementById("telefono");
         var rut = document.getElementById("rut");
